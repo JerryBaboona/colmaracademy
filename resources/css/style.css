@@ -5,14 +5,26 @@ body {
   margin: 0;
 }
 
+/*Site containers*/
+.left-container {
+  width: 60%;
+  padding-left: 1.5rem;
+}
+
+.right-container {
+  width: 40%;
+  padding-left: 1.5rem;
+}
+
 /*Header styling*/
 .header {
   display: flex;
   align-items: center;
-  height: 64px;
+  height: 4rem;
   width: 100%;
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 5;
 }
 /*Header logo styling*/
 .header .logo {
@@ -55,4 +67,68 @@ body {
   margin-left: 1rem;
   text-decoration: none;
   color: inherit;
+}
+
+/*Banner styling*/
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  top: 4rem;
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #CECECE;
+  color: #494949;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.banner .banner-text h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+.banner .banner-text p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.banner .banner-text span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  background-color: #494949;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+}
+
+.banner .banner-text span a {
+  text-decoration: none;
+  color: #DEDEDE;
+}
+
+/*Information section styling*/
+.information {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.information .left-container img {
+  width: 100%;
+  height: auto;
 }
