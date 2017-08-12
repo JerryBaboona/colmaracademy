@@ -3,15 +3,20 @@ body {
   font-family: "Dosis";
   font-size: 16px;
   margin: 0;
+  color: #494949;
 }
 
 /*Site containers*/
 .left-container {
+  display: flex;
+  flex-direction: column;
   width: 60%;
   padding-left: 1.5rem;
 }
 
 .right-container {
+  display: flex;
+  flex-direction: column;
   width: 40%;
   padding-left: 1.5rem;
 }
@@ -78,7 +83,6 @@ body {
   top: 4rem;
   padding: 2rem 0rem 2rem 0rem;
   background-color: #CECECE;
-  color: #494949;
 }
 
 .banner img {
@@ -124,11 +128,82 @@ body {
 /*Information section styling*/
 .information {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  top: 4rem;
   width: 100%;
 }
-
+/*Main section*/
 .information .left-container img {
   width: 100%;
   height: auto;
+  margin-top: 2rem;
+}
+
+.information .left-container h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1em;
+}
+
+.information .left-container p {
+  margin-top: 0;
+}
+
+.information .left-container .author {
+  font-size: 0.75rem;
+  font-family: Arial;
+}
+/*Information blocks*/
+.information .right-container .info-block {
+  display: flex;
+  align-items: center;
+  border-left: 0.5px solid #CECECE;
+  border-bottom: 0.5px solid #CECECE;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.information .right-container .info-block:first-child {
+  padding-top: 2rem;
+}
+
+.information .right-container .info-block:last-child {
+  background-color: #CECECE;
+}
+
+.information .right-container .info-block img {
+  width: 35%;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.information .right-container .info-block .info-text {
+  width: 65%;
+  margin-left: 1rem;
+}
+
+.information .right-container .info-block .info-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.5em;
+  font-size: 1.4rem;
+}
+
+.information .right-container .info-block .info-text p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.information .right-container .info-block .info-text a {
+  text-decoration: none;
+  color: #4f89ff;
+  font-weight: 500;
+}
+
+/*Learning section styling*/
+.learning {
+  position: relative;
+  top: 4rem;
 }
