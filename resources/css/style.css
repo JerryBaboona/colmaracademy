@@ -128,7 +128,7 @@ body {
 /*Information section styling*/
 .information {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   position: relative;
   top: 4rem;
   width: 100%;
@@ -154,12 +154,18 @@ body {
 .information .left-container .author {
   font-size: 0.75rem;
   font-family: Arial;
+  margin-bottom: 2rem;
 }
 /*Information blocks*/
+.information .right-container {
+  border-left: 0.5px solid #CECECE;
+  margin-left: 2rem;
+  padding-left: 0;
+}
+
 .information .right-container .info-block {
   display: flex;
   align-items: center;
-  border-left: 0.5px solid #CECECE;
   border-bottom: 0.5px solid #CECECE;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -206,4 +212,53 @@ body {
 .learning {
   position: relative;
   top: 4rem;
+  background-color: #EAEAEA;
+  padding: 2rem 3rem 2rem 3rem;
 }
+
+.learning h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  line-height: 1em;
+}
+
+.learning .courses-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+.learning .courses-row .course {
+  max-width: 33%;
+  background-color: #FFFFFF;
+  margin-right: 2rem;
+}
+
+.learning .courses-row .course:last-child {
+  margin-right: 0rem;
+}
+
+.learning .courses-row .course img {
+  width: 100%;
+  height: auto;
+}
+
+.learning .courses-row .course h3 {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.learning .courses-row .course span {
+  margin: 0rem 1rem 0rem 1rem;
+  text-transform: uppercase;
+}
+
+.learning .courses-row .course p {
+  margin: 0.5rem 1rem 1.5rem 1rem;
+}
+
+/*Thesis section styling*/
