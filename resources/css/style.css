@@ -6,6 +6,14 @@ body {
   color: #494949;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
 /*Site containers*/
 .left-container {
   display: flex;
@@ -142,7 +150,6 @@ body {
 
 .information .left-container h2 {
   margin-top: 2rem;
-  font-size: 2rem;
   margin-bottom: 1.5rem;
   line-height: 1em;
 }
@@ -159,11 +166,11 @@ body {
 /*Information blocks*/
 .information .right-container {
   border-left: 0.5px solid #CECECE;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   padding-left: 0;
 }
 
-.information .right-container .info-block {
+.info-block {
   display: flex;
   align-items: center;
   border-bottom: 0.5px solid #CECECE;
@@ -176,28 +183,27 @@ body {
 }
 
 .information .right-container .info-block:last-child {
-  background-color: #CECECE;
+  background-color: #EAEAEA;
 }
 
-.information .right-container .info-block img {
+.info-block img {
   width: 35%;
   height: auto;
   margin-left: 1rem;
 }
 
-.information .right-container .info-block .info-text {
+.info-block .info-text {
   width: 65%;
   margin-left: 1rem;
 }
 
-.information .right-container .info-block .info-text h3 {
+.info-block .info-text h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  line-height: 1.5em;
-  font-size: 1.4rem;
+  line-height: 1.25em;
 }
 
-.information .right-container .info-block .info-text p {
+.info-block .info-text p {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -213,7 +219,8 @@ body {
   position: relative;
   top: 4rem;
   background-color: #EAEAEA;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 0rem 3rem;
+  height: 100%;
 }
 
 .learning h1 {
@@ -262,3 +269,69 @@ body {
 }
 
 /*Thesis section styling*/
+/*Header (outside .thesis div)*/
+#thesis-title {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+.thesis {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+}
+/*Video section*/
+.thesis .thesis-video {
+  width: 100%;
+}
+
+.thesis .thesis-video video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thesis p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.thesis .info-block {
+  border: none;
+}
+
+.thesis .info-block:first-child {
+  background-color: #EAEAEA;
+}
+
+/*Footer styling*/
+footer {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  border-top: 0.5px solid #CECECE;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 0.8rem;
+}
+
+footer .copyright {
+  width: 50%;
+}
+
+footer .legal {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+footer .legal span {
+  padding-left: 1rem;
+}
