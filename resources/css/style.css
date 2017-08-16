@@ -44,7 +44,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 50%;
+  width: 35%;
   margin-left: 1.5rem;
 }
 
@@ -72,7 +72,7 @@ h3 {
 .header nav {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 65%;
   margin-right: 1.5rem;
 }
 
@@ -318,11 +318,12 @@ footer {
   top: 4rem;
   width: 100%;
   border-top: 0.5px solid #CECECE;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 0 1rem 0;
   font-size: 0.8rem;
 }
 
 footer .copyright {
+  margin-left: 1.5rem;
   width: 50%;
 }
 
@@ -333,5 +334,50 @@ footer .legal {
 }
 
 footer .legal span {
-  padding-left: 1rem;
+ margin-right: 2.5rem;
+}
+
+/*MEDIA QUERIES*/
+/*Adjust banner text size as screen size decreases*/
+@media only screen and (max-width: 920px) {
+  .banner .banner-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .banner .banner-text h1 {
+    font-size: 2.0rem;
+  }
+  .banner .banner-text {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .learning .courses-row .course {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .banner .banner-text h1 {
+    font-size: 1.8rem;
+  }
+  .banner .banner-text {
+    font-size: 1.1rem;
+  }
+  .banner .banner-text span {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.0rem;
+  }
+}
+
+/*Mobile styling*/
+@media only screen and (max-width: 580px) {
+  
 }
